@@ -5,6 +5,7 @@ import user from "../../assets/user.png";
 import "./Login.css";
 
 function Login() {
+  // Capturing the state of form
   const [userData, setUserData] = useState({
     user_name: "",
     email: "",
