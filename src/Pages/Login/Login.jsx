@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import user from "../../assets/user.png";
 import "./Login.css";
 
+// This is login component.
 function Login() {
   const [userData, setUserData] = useState({
     user_name: "",
