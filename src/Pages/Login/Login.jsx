@@ -12,10 +12,14 @@ function Login() {
     password: "",
   });
 
+// user clicking submit button
+
   const handleChangeData = (e) => {
     console.log(e.target.name, " : ", e.target.value);
     setUserData({
-      ...userData,
+      // if user did not entered any data then keep prev state
+      ...userData,   // instead of writing if else statements
+      // // if user entered the data then capture it
       [e.target.name]: e.target.value.trim(),
     });
   };
@@ -24,6 +28,8 @@ function Login() {
   const navigateto = () => {
     history.push("/Signup");
   };
+
+  // user entering in text field
   const handleSubmit = (event) => {
     event.preventDefault();
     if (
